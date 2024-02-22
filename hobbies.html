@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hobbies</title>
+    <style>
+      body {
+        background-color: #282434;
+        font-family: Arial, sans-serif;
+        color: white;
+        letter-spacing: 1.25px;
+      }
+
+      nav {
+        padding-top: 5px;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-right: 18px;
+        transition-duration: 0.15s;
+      }
+
+      a:hover {
+        color: lightblue;
+        text-decoration: underline;
+        display: transform;
+        transform: translateY(-2px);
+      }
+
+      .container {
+        padding-right: 150px;
+        padding-left: 150px;
+      }
+
+      .title {
+        font-size: 80px;
+        margin: 0;
+      }
+
+      .title-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+
+      footer {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+      }
+
+      h3 {
+        font-size: 35px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      .context {
+        font-size: 16px;
+        line-height: 1.35;
+      }
+
+      .item {
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding-bottom: 64px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <img src="assests/logo.png" height="64" width="100" alt="Logo" />
+      <div style="display: flex; align-items: center">
+        <audio controls style="height: 40px; margin-right: 18px">
+          <source src="assests/Sakura.mp3" type="audio/mpeg" />
+        </audio>
+        <a href="home.html">Home</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+    <div class="container title-container">
+      <div style="text-align: center">
+        <h2 class="title">
+          Here's some of my... <br />
+          <span style="color: lightblue">Hobbies </span>
+        </h2>
+
+        <p
+          style="
+            font-size: 18px;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          I have a lot of hobbies that I enjoy to do during my free time! Some
+          of these activites include robotics, programming, chess, and
+          badminton. I will cover these topics in depth, so scroll down!
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="item">
+        <div
+          style="
+            background-color: #645995;
+            border-radius: 16px;
+            padding: 24px;
+            margin-right: 24px;
+          "
+        >
+          <h3>Robotics</h3>
+          <span class="context">
+            I'm a member for the Stuyvesant robotics team, Stuy Fusion (FTC Team
+            479). We compete in competitions throughout NYC and the United
+            States. It's been a great experience and I've learned a lot about
+            engineering and lower-level hardware programming. The community is
+            also great and I've made a lot of friends through the team. I would
+            highly reccomend anyone to join! It's truly changed my life, and now
+            I look forward to going to meeting, even if it's over the break.
+          </span>
+        </div>
+        <img src="assests/team.webp" style="border-radius: 16px; width: 45%" />
+        <div
+          style="
+            height: 200px;
+            width: 1px;
+            position: absolute;
+            border-color: white;
+            border-width: 1000px;
+            background-color: white;
+            top: 0;
+            transform: translateY(-100px);
+            right: 50%;
+          "
+        ></div>
+      </div>
+      <div class="item">
+        <div
+          style="
+            background-color: #645995;
+            border-radius: 16px;
+            padding: 24px;
+            margin-right: 24px;
+          "
+        >
+          <h3>Programming</h3>
+          <span class="context">
+            I've been programming since the beginning of the pandemic. I've
+            always loved the idea of technology and coding, but my first
+            experience with it was through The Future Sphere's coding classes. I
+            learned about Python, web development, and more. Using the skills
+            learned from these classes, I've been able to join freelance web
+            development teams, and so much more.
+          </span>
+        </div>
+        <img
+          src="assests/programming.png"
+          style="border-radius: 16px"
+          width="45%"
+        />
+        <div
+          style="
+            height: 200px;
+            width: 1px;
+            position: absolute;
+            border-color: white;
+            border-width: 1000px;
+            background-color: white;
+            top: 0;
+            transform: translateY(-100px);
+            right: 50%;
+          "
+        ></div>
+      </div>
+      <div class="item">
+        <div
+          style="
+            background-color: #645995;
+            border-radius: 16px;
+            padding: 24px;
+            margin-right: 24px;
+          "
+        >
+          <h3>Chess</h3>
+          <span class="context">
+            I love playing chess! I started playing in 6th grade, and I've been
+            on and off the game since then. Though I haven't had the time to
+            join Stuyvesant's Chess Club, I still play with my friends and
+            family. I'm not the best, but I'm always trying to improve my game.
+            I currently have a rating of 1300 on chess.com and play the Pirc
+            Defense for black and London System for white.
+          </span>
+        </div>
+        <video style="width: 45%; border-radius: 16px" controls>
+          <source src="assests/pirc.mp4" type="video/mp4" />
+        </video>
+
+        <div
+          style="
+            height: 200px;
+            width: 1px;
+            position: absolute;
+            border-color: white;
+            border-width: 1000px;
+            background-color: white;
+            top: 0;
+            transform: translateY(-100px);
+            right: 50%;
+          "
+        ></div>
+      </div>
+      <div class="item">
+        <div
+          style="
+            background-color: #645995;
+            border-radius: 16px;
+            padding: 24px;
+            margin-right: 24px;
+          "
+        >
+          <h3>Badminton</h3>
+          <span class="context"
+            >Badminton is my sport of choice. I love how simplistic the game is,
+            but also the high skill gap that seperates the casuals from the
+            professionals. During the summer, you can often find me playing this
+            sport with my friends at the local park. Though, just like chess, I
+            still have much to improve and work on. I've been thinking about
+            trying out for Stuyvesant's Badminton Team, but we'll see.</span
+          >
+        </div>
+        <video style="width: 45%; border-radius: 16px" controls>
+          <source src="assests/badminton.mp4" type="video/mp4" />
+        </video>
+        <div
+          style="
+            height: 200px;
+            width: 1px;
+            position: absolute;
+            border-color: white;
+            border-width: 1000px;
+            background-color: white;
+            top: 0;
+            right: 50%;
+            transform: translateY(-100px);
+          "
+        ></div>
+      </div>
+    </div>
+    <hr style="width: 70%; margin-bottom: 0px" />
+    <footer class="container footer">
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 16px;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            margin-right: 32px;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <span style="font-size: 18px">Stuy CS Department</span>
+          <a style="font-size: 18px" href="mailto:oshi60@stuy.edu"
+            >oshi60@stuy.edu</a
+          >
+          <a style="font-size: 18px" href="tel:646-301-0911">(646)-301-0911</a>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <a style="font-size: 18px" href="home.html">Home</a>
+          <a style="font-size: 18px" href="hobbies.html">Hobbies</a>
+          <a style="font-size: 18px" href="contact.html">Contact</a>
+        </div>
+        <a href="">
+          <image
+            src="assests/github.png"
+            height="100"
+            width="100"
+            alt="Logo"
+            style="margin: 0"
+          />
+        </a>
+      </div>
+      <span>Copyright © Owen Shi | Feburary 21st, 2024 </span>
+    </footer>
+  </body>
+</html>
