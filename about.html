@@ -43,6 +43,7 @@
       .title {
         font-size: 80px;
         margin: 0;
+        text-align: right;
       }
 
       .title-image {
@@ -65,6 +66,17 @@
         flex-direction: column;
         font-size: 14px;
       }
+
+      .text {
+        font-size: 18px;
+        line-height: 1.4;
+      }
+
+      .caption {
+        font-size: 14px;
+        color: lightgray;
+        text-align: center;
+      }
     </style>
   </head>
 
@@ -83,24 +95,90 @@
       </div>
     </nav>
     <div class="container title-container">
-      <div>
-        <h2 class="title">
-          Hi, I'm <br />
-          <span style="color: lightblue">Owen Shi </span>
-        </h2>
-
-        <p style="font-size: 18px; max-width: 500px">
-          I'm a current sophomore at Stuyvesant High School. I'm interested in
-          robotics, computer science, and gaming. This website was made for an
-          assignment by Ms. Mousakitis, period 2.
-        </p>
-      </div>
       <img
-        src="assests/owen.png"
+        src="assests/family.jpeg"
         width="600"
         class="title-image"
         alt="Portrait Photo of Owen"
       />
+      <div>
+        <h2 class="title">
+          More about <br />
+          <span style="color: lightblue">Myself</span>
+        </h2>
+
+        <p style="font-size: 18px; text-align: right; max-width: 500px">
+          Want to get to know more about me? The developer behind this travesty
+          of a website? Sure, here you go: my family, background, etc. My whole
+          life story!
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="text">
+        I'm Owen Shi, a current sophomore at Stuyvesant High School, interested
+        in STEM. I was born in Queens, New York, on April 13th, 2008, and raised
+        by a traditional Chinese household. At 5, I moved to Greensboro, North
+        Carolina, where I went to elemetary school (shoutout to Claxton
+        Elemetary!). There, I lived for 6 years, helping my parents in our
+        family restaurant and playing video games--enjoying life.
+      </p>
+      <div
+        style="
+          padding-top: 20px;
+          padding-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        "
+      >
+        <img
+          src="assests/greensboro.png"
+          style="width: 60%; border-radius: 16px"
+          alt="Childhood Photo of Owen's North Carolina Home"
+        />
+        <p class="caption">
+          My old childhood home in North Carolina. The gray car is my
+          grandfather's.
+        </p>
+      </div>
+      <p class="text">
+        However, due to parental conflicts, I moved back to New York City during
+        my 5th-grade summer, attending I.S. 5, Walter H. Crowley Middle School,
+        a school in Queens. I was a bit of a loner, but I made a few friends. I
+        was also a bit of a troublemaker, but a decent student. During the
+        pandemic, which happened at the end of my 6th-grade year, I began to
+        learn to program, which quite literally changed my life. 8th grade went
+        smoothly and I went to Townsend Harris High School before transferring
+        to Stuyvesant due to their superior STEM programs. my favorite classes
+        are Annual Introduction to Computer Science and Physics right now. I'm
+        currently really enjoying my time here, and it's been a great
+        experience!
+        <br />
+        <br />
+        I live in Woodside, Queens, with my mother and grandmother in a small
+        house. My aunt and cousins live down the block, so it's really
+        convenient. Though I do miss Greensboro's large houses and flourishing
+        nature, I love New York's hustle culture and mentality which motivate me
+        to work harder each and every day!
+      </p>
+      <div
+        style="
+          padding-top: 20px;
+          padding-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        "
+      >
+        <video controls style="width: 70%; border-radius: 16px">
+          <source src="assests/is5.mp4" type="video/mp4" />
+        </video>
+        <p class="caption">
+          A video of my old middle school, I.S. 5, Walter H. Crowley Middle
+          School.
+        </p>
+      </div>
     </div>
     <hr style="width: 70%; margin-bottom: 0px" />
     <footer class="container footer">
@@ -141,6 +219,7 @@
           />
         </a>
       </div>
+      <hr style="width: 50%; margin-bottom: 32px" />
       <span>Copyright © Owen Shi | Feburary 21st, 2024 </span>
     </footer>
   </body>
