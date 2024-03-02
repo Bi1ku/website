@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Home</title>
+    <link rel="icon" type="image/png" href="assests/favicon.png" />
     <style>
       body {
         background-color: #282434;
@@ -24,7 +25,7 @@
         text-decoration: none;
         font-size: 15px;
         letter-spacing: 1px;
-        margin-right: 18px;
+        margin-right: 24px;
         transition-duration: 0.15s;
       }
 
@@ -51,10 +52,10 @@
 
       .title-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 75px;
       }
 
       footer {
@@ -65,16 +66,47 @@
         flex-direction: column;
         font-size: 14px;
       }
+
+      table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      table td {
+        padding: 7.5px;
+      }
+
+      table th {
+        text-align: left;
+        padding: 7.5px;
+      }
+
+      .subheader {
+        font-size: 50px;
+        margin: 0;
+        margin-bottom: 16px;
+        color: lightblue;
+        text-align: center;
+      }
     </style>
   </head>
 
   <body>
     <nav>
       <a href="home.html">
-        <img src="assests/logo.png" height="64" width="100" alt="Logo" />
+        <img
+          src="assests/logo.png"
+          height="64"
+          width="100"
+          alt="Owen's Website Logo"
+        />
       </a>
       <div style="display: flex; align-items: center">
-        <audio controls style="height: 40px; margin-right: 18px">
+        <audio
+          controls
+          style="height: 40px; margin-right: 24px; border-radius: 16px"
+          volume="0.1"
+        >
           <source src="assests/Sakura.mp3" type="audio/mpeg" />
         </audio>
         <a href="home.html">Home</a>
@@ -83,7 +115,7 @@
       </div>
     </nav>
     <div class="container title-container">
-      <div>
+      <div style="margin-right: 64px">
         <h2 class="title">
           Hi, I'm <br />
           <span style="color: lightblue">Owen Shi </span>
@@ -91,16 +123,81 @@
 
         <p style="font-size: 18px; max-width: 500px">
           I'm a current sophomore at Stuyvesant High School. I'm interested in
-          robotics, computer science, and gaming. This website was made for an
-          assignment by Ms. Mousakitis, period 2.
+          robotics, computer science, and gaming. This website was made as an
+          project for Ms. Mousakitis, period 2.
         </p>
       </div>
       <img
-        src="assests/owen.png"
+        src="assests/owen.jpeg"
         width="600"
         class="title-image"
         alt="Portrait Photo of Owen"
       />
+    </div>
+    <div class="container" style="margin-bottom: 64px">
+      <h2 class="subheader">My Schedule</h2>
+      <table border="1">
+        <tr>
+          <th>Period</th>
+          <th>Class</th>
+          <th>Teacher</th>
+          <th>Personal Rating</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Health</td>
+          <td>Ms. Fang</td>
+          <td>8/10</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Intro to Computer Science</td>
+          <td>Ms. Mousakitis</td>
+          <td>10/10</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Spanish III</td>
+          <td>Ms. Mateo</td>
+          <td>7/10</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Foundations of Literature</td>
+          <td>Mr. Francis</td>
+          <td>8/10</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Algebra II</td>
+          <td>Ms. Vollaro</td>
+          <td>9/10</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Lunch</td>
+          <td>Aristotle</td>
+          <td>10/10</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>AP World History</td>
+          <td>Ms. Firdman</td>
+          <td>7/10</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Physics</td>
+          <td>Ms. Vollaro</td>
+          <td>9/10</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Physical Education</td>
+          <td>Mr. Choubaralian</td>
+          <td>8/10</td>
+        </tr>
+      </table>
     </div>
     <hr style="width: 70%; margin-bottom: 0px" />
     <footer class="container footer">
@@ -129,9 +226,9 @@
         <div style="display: flex; flex-direction: column; align-items: center">
           <a style="font-size: 18px" href="home.html">Home</a>
           <a style="font-size: 18px" href="hobbies.html">Hobbies</a>
-          <a style="font-size: 18px" href="contact.html">Contact</a>
+          <a style="font-size: 18px" href="about.html">About</a>
         </div>
-        <a href="">
+        <a href="https://github.com/bi1ku/website/" target="_ref">
           <image
             src="assests/github.png"
             height="100"
@@ -144,5 +241,9 @@
       <hr style="width: 50%; margin-bottom: 32px" />
       <span>Copyright © Owen Shi | Feburary 21st, 2024 </span>
     </footer>
+    <script>
+      const audio = document.getElementsByTagName("audio")[0];
+      audio.volume = 0.05;
+    </script>
   </body>
 </html>

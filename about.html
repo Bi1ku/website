@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
   <head>
-    <title>Home</title>
+    <title>About</title>
+    <link rel="icon" type="image/png" href="assests/favicon.png" />
     <style>
       body {
         background-color: #282434;
@@ -24,7 +25,7 @@
         text-decoration: none;
         font-size: 15px;
         letter-spacing: 1px;
-        margin-right: 18px;
+        margin-right: 24px;
         transition-duration: 0.15s;
       }
 
@@ -52,7 +53,7 @@
 
       .title-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding-top: 100px;
         padding-bottom: 100px;
@@ -68,8 +69,22 @@
       }
 
       .text {
-        font-size: 18px;
-        line-height: 1.4;
+        font-size: 22px;
+        line-height: 1.35;
+      }
+
+      @media (max-width: 1800px) {
+        .text {
+          font-size: 20px;
+          line-height: 1.35;
+        }
+      }
+
+      @media (max-width: 1500px) {
+        .text {
+          font-size: 18px;
+          line-height: 1.35;
+        }
       }
 
       .caption {
@@ -77,16 +92,56 @@
         color: lightgray;
         text-align: center;
       }
+
+      table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      table td {
+        padding: 7.5px;
+      }
+
+      table th {
+        text-align: left;
+        padding: 7.5px;
+      }
+
+      .subheader {
+        font-size: 50px;
+        margin: 0;
+        margin-bottom: 16px;
+        color: lightblue;
+        text-align: center;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+      }
+
+      .bold {
+        font-weight: 600;
+        color: lightblue;
+      }
     </style>
   </head>
 
   <body>
     <nav>
       <a href="home.html">
-        <img src="assests/logo.png" height="64" width="100" alt="Logo" />
+        <img
+          src="assests/logo.png"
+          height="64"
+          width="100"
+          alt="Owen's Website Logo"
+        />
       </a>
       <div style="display: flex; align-items: center">
-        <audio controls style="height: 40px; margin-right: 18px">
+        <audio
+          controls
+          style="height: 40px; margin-right: 24px; border-radius: 16px"
+        >
           <source src="assests/Sakura.mp3" type="audio/mpeg" />
         </audio>
         <a href="home.html">Home</a>
@@ -99,9 +154,9 @@
         src="assests/family.jpeg"
         width="600"
         class="title-image"
-        alt="Portrait Photo of Owen"
+        alt="A photo of Owen's family."
       />
-      <div>
+      <div style="margin-left: 64px">
         <h2 class="title">
           More about <br />
           <span style="color: lightblue">Myself</span>
@@ -114,53 +169,113 @@
         </p>
       </div>
     </div>
+    <div class="container" style="margin-bottom: 64px">
+      <h2 class="subheader">Introduction to The Family</h2>
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Relation</th>
+          <th>Date of Birth</th>
+          <th>Languages Spoken</th>
+        </tr>
+        <tr>
+          <td>Xiang Yun Chen</td>
+          <td>Mother</td>
+          <td>March 3rd, 1980</td>
+          <td>Mandarin, Fuzhounese, Beginner English</td>
+        </tr>
+        <tr>
+          <td>Wan Zhong Shi</td>
+          <td>Father</td>
+          <td>November 16th, 1978</td>
+          <td>Mandarin, Fuzhounese, Beginner English</td>
+        </tr>
+        <tr>
+          <td>Guo Jin Lin</td>
+          <td>Grandmother</td>
+          <td>Feburary 17th, 1950</td>
+          <td>Beginner Mandarin, Fuzhounese</td>
+        </tr>
+        <tr>
+          <td>Yip Shun Li</td>
+          <td>Uncle</td>
+          <td>November 14th, 1968</td>
+          <td>Mandarin, Cantonese, English</td>
+        </tr>
+        <tr>
+          <td>Xiang Ying Chen</td>
+          <td>Aunt</td>
+          <td>May 23rd, 1978</td>
+          <td>Mandarin, Fuzhounese, Canotnese, Beginner English</td>
+        </tr>
+        <tr>
+          <td>Karen Li</td>
+          <td>Cousin</td>
+          <td>Janurary 1st, 2006</td>
+          <td>Intermediate Mandarin, English</td>
+        </tr>
+        <tr>
+          <td>Kelly Li</td>
+          <td>Cousin</td>
+          <td>May 5th, 2004</td>
+          <td>Intermediate Mandarin, English</td>
+        </tr>
+      </table>
+    </div>
+
     <div class="container">
-      <p class="text">
-        I'm Owen Shi, a current sophomore at Stuyvesant High School, interested
-        in STEM. I was born in Queens, New York, on April 13th, 2008, and raised
-        by a traditional Chinese household. At 5, I moved to Greensboro, North
-        Carolina, where I went to elemetary school (shoutout to Claxton
-        Elemetary!). There, I lived for 6 years, helping my parents in our
-        family restaurant and playing video games--enjoying life.
-      </p>
-      <div
-        style="
-          padding-top: 20px;
-          padding-bottom: 20px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        "
-      >
-        <img
-          src="assests/greensboro.png"
-          style="width: 60%; border-radius: 16px"
-          alt="Childhood Photo of Owen's North Carolina Home"
-        />
-        <p class="caption">
-          My old childhood home in North Carolina. The gray car is my
-          grandfather's.
-        </p>
+      <div class="item">
+        <div style="width: 60%; margin-right: 24px">
+          <p class="text">
+            I'm Owen Shi, a current sophomore at Stuyvesant High School who's
+            passionate about STEM. I was born in Queens, New York, on April
+            13th, 2008, and raised by a traditional Chinese household. At 5, I
+            moved to Greensboro, North Carolina, where I went to elementary
+            school (shoutout to Claxton Elementary!).
+          </p>
+          <p class="text">
+            However, due to parental conflicts, I moved back to New York City
+            during my 5th-grade summer, attending
+            <span class="bold">I.S. 5, Walter H. Crowley Middle School</span>, a
+            school in Queens. I was a bit of a loner, but I made a few friends.
+            I was also a bit of a troublemaker, but a decent student. During the
+            pandemic, which happened at the end of my 6th-grade year, I began to
+            learn to program, which quite literally changed my life.
+          </p>
+          <p class="text">
+            8th grade went smoothly and I went to
+            <span class="bold"> Townsend Harris High School </span> before
+            <span class="bold">transferring</span> to Stuyvesant due to their
+            superior STEM programs. My favorite classes are Annual Introduction
+            to Computer Science and Physics right now.
+          </p>
+        </div>
+        <div
+          style="
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <img
+            src="assests/greensboro.png"
+            style="width: 100%; border-radius: 16px"
+            alt="A photo of Owen's childhood home in North Carolina."
+          />
+          <p class="caption">
+            My old childhood home in North Carolina. The gray car is my
+            grandfather's.
+          </p>
+        </div>
       </div>
       <p class="text">
-        However, due to parental conflicts, I moved back to New York City during
-        my 5th-grade summer, attending I.S. 5, Walter H. Crowley Middle School,
-        a school in Queens. I was a bit of a loner, but I made a few friends. I
-        was also a bit of a troublemaker, but a decent student. During the
-        pandemic, which happened at the end of my 6th-grade year, I began to
-        learn to program, which quite literally changed my life. 8th grade went
-        smoothly and I went to Townsend Harris High School before transferring
-        to Stuyvesant due to their superior STEM programs. my favorite classes
-        are Annual Introduction to Computer Science and Physics right now. I'm
-        currently really enjoying my time here, and it's been a great
-        experience!
-        <br />
-        <br />
         I live in Woodside, Queens, with my mother and grandmother in a small
         house. My aunt and cousins live down the block, so it's really
         convenient. Though I do miss Greensboro's large houses and flourishing
-        nature, I love New York's hustle culture and mentality which motivate me
-        to work harder each and every day!
+        nature, I love New York's
+        <span class="bold">hustle culture and mentality</span> which motivates
+        me to work harder each and every day!
       </p>
       <div
         style="
@@ -179,6 +294,58 @@
           School.
         </p>
       </div>
+      <div class="item">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+          "
+        >
+          <img
+            src="assests/six.jpg"
+            style="border-radius: 16px; width: 100%"
+            alt="An image of someone playing 6-finger claw"
+          />
+          <p class="caption">
+            My old childhood home in North Carolina. The gray car is my
+            grandfather's.
+          </p>
+        </div>
+        <div style="width: 60%; margin-left: 24px">
+          <p class="text">
+            I'm also a huge fan of video games, and I play them in my free time.
+            During my middle school years (especially over the pandemic), I
+            remember playing for at least
+            <span class="bold">4 hours per day</span> (yikes!). These times are
+            some of the most important in my life, as I've made many friends
+            through these games. I was also able to learn a lot about teamwork,
+            strategy, and communication. Though I've cut down on my gaming time
+            due to school and robotics, I still play games occasionally and love
+            their <span class="bold">competitive aspects</span>--I used to be in
+            the top 0.5% in Call of Duty and Fortnite mobile using a 6-finger
+            claw grip. Some of my favorite childhood games to play are:
+          </p>
+          <ul class="text bold">
+            <li>Call Of Duty: Mobile</li>
+            <li>Fortnite Battle Royale</li>
+            <li>Valorant FPS Search & Destroy</li>
+            <li>Minecraft Sandbox and Sruvival</li>
+          </ul>
+          <p class="text">
+            Games represent a huge part of my life, as they symbolize my
+            competitve nature. I love the aspect of improving and honing one's
+            skills.
+          </p>
+        </div>
+      </div>
+      <p class="text" style="margin-bottom: 64px">
+        Though, in hindsight, I do admit I was a little too addicted to them in
+        my early youth, but it's no argument that they had a huge impact on my
+        overall development. Do you have any favorite games and pastimes? I'd
+        love to hear about them!
+      </p>
     </div>
     <hr style="width: 70%; margin-bottom: 0px" />
     <footer class="container footer">
@@ -207,9 +374,9 @@
         <div style="display: flex; flex-direction: column; align-items: center">
           <a style="font-size: 18px" href="home.html">Home</a>
           <a style="font-size: 18px" href="hobbies.html">Hobbies</a>
-          <a style="font-size: 18px" href="contact.html">Contact</a>
+          <a style="font-size: 18px" href="about.html">About</a>
         </div>
-        <a href="">
+        <a href="https://github.com/bi1ku/website/" target="_blank">
           <image
             src="assests/github.png"
             height="100"
@@ -222,5 +389,9 @@
       <hr style="width: 50%; margin-bottom: 32px" />
       <span>Copyright © Owen Shi | Feburary 21st, 2024 </span>
     </footer>
+    <script>
+      const audio = document.getElementsByTagName("audio")[0];
+      audio.volume = 0.05;
+    </script>
   </body>
 </html>

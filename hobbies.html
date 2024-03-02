@@ -2,7 +2,25 @@
 <html>
   <head>
     <title>Hobbies</title>
+    <link rel="icon" type="image/png" href="assests/favicon.png" />
     <style>
+      .bold {
+        font-weight: 600;
+        color: lightblue;
+      }
+
+      .vl {
+        height: 150px;
+        width: 1px;
+        position: absolute;
+        border-color: white;
+        border-width: 1000px;
+        background-color: white;
+        top: 0;
+        right: 50%;
+        transform: translateY(-50px);
+      }
+
       body {
         background-color: #282434;
         font-family: Arial, sans-serif;
@@ -24,7 +42,7 @@
         text-decoration: none;
         font-size: 15px;
         letter-spacing: 1px;
-        margin-right: 18px;
+        margin-right: 24px;
         transition-duration: 0.15s;
       }
 
@@ -51,8 +69,8 @@
       }
 
       footer {
-        padding-top: 50px;
-        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 50px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -66,8 +84,22 @@
       }
 
       .context {
-        font-size: 16px;
+        font-size: 22px;
         line-height: 1.35;
+      }
+
+      @media (max-width: 1800px) {
+        .context {
+          font-size: 20px;
+          line-height: 1.35;
+        }
+      }
+
+      @media (max-width: 1500px) {
+        .context {
+          font-size: 16px;
+          line-height: 1.35;
+        }
       }
 
       .item {
@@ -76,16 +108,29 @@
         align-items: center;
         padding-bottom: 64px;
       }
+
+      .media {
+        width: 45%;
+        border-radius: 16px;
+      }
     </style>
   </head>
 
   <body>
     <nav>
       <a href="home.html">
-        <img src="assests/logo.png" height="64" width="100" alt="Logo" />
+        <img
+          src="assests/logo.png"
+          height="64"
+          width="100"
+          alt="Owen's Website 'Logo"
+        />
       </a>
       <div style="display: flex; align-items: center">
-        <audio controls style="height: 40px; margin-right: 18px">
+        <audio
+          controls
+          style="height: 40px; margin-right: 24px; border-radius: 16px"
+        >
           <source src="assests/Sakura.mp3" type="audio/mpeg" />
         </audio>
         <a href="home.html">Home</a>
@@ -122,71 +167,63 @@
             border-radius: 16px;
             padding: 24px;
             margin-right: 24px;
+            width: 65%;
           "
         >
           <h3>Robotics</h3>
           <span class="context">
-            I'm a member for the Stuyvesant robotics team, Stuy Fusion (FTC Team
-            479). We compete in competitions throughout NYC and the United
-            States. It's been a great experience and I've learned a lot about
-            engineering and lower-level hardware programming. The community is
-            also great and I've made a lot of friends through the team. I would
-            highly reccomend anyone to join! It's truly changed my life, and now
-            I look forward to going to meeting, even if it's over the break.
+            I'm a member for the Stuyvesant robotics team,
+            <span class="bold">Stuy Fusion</span> (FTC Team 479). We compete in
+            competitions throughout NYC and the United States. It's been a great
+            experience and I've learned a lot about
+            <span class="bold"
+              >engineering and lower-level hardware programming</span
+            >. The community is also great and I've made a lot of friends
+            through the team. I would highly reccomend anyone to join! It's
+            truly <span class="bold">changed my life</span>, and now I look
+            forward to going to every meeting, even if it's over the break.
+            Personally, I'm on the software team where we program for autonomous
+            robot functionality using control theory and teleop driver controls.
           </span>
         </div>
-        <img src="assests/team.webp" style="border-radius: 16px; width: 45%" />
-        <div
-          style="
-            height: 200px;
-            width: 1px;
-            position: absolute;
-            border-color: white;
-            border-width: 1000px;
-            background-color: white;
-            top: 0;
-            transform: translateY(-100px);
-            right: 50%;
-          "
-        ></div>
+        <img
+          src="assests/team.webp"
+          class="media"
+          alt="Stuyvesant robtics team FTC 479 (Stuy Fusion) team photo"
+        />
+        <div class="vl"></div>
       </div>
       <div class="item">
+        <img
+          src="assests/programming.png"
+          class="media"
+          alt="A picture depicting Owen's programming hobbies with many applications open."
+        />
         <div
           style="
             background-color: #645995;
             border-radius: 16px;
             padding: 24px;
-            margin-right: 24px;
+            margin-left: 24px;
+            width: 65%;
           "
         >
           <h3>Programming</h3>
           <span class="context">
-            I've been programming since the beginning of the pandemic. I've
-            always loved the idea of technology and coding, but my first
-            experience with it was through The Future Sphere's coding classes. I
-            learned about Python, web development, and more. Using the skills
-            learned from these classes, I've been able to join freelance web
-            development teams, and so much more.
+            I've been programming since the
+            <span class="bold">beginning of the pandemic</span>. I've always
+            loved the idea of technology and coding, but my first experience
+            with it was through The Future Sphere's coding classes. I learned
+            about Python, web development, and more. Using the skills learned
+            from these classes, I've been able to
+            <span class="bold"
+              >join freelance web development teams, and so much more</span
+            >. These organizations were how I originally learned to code, and
+            through them, I've been able build off of these initial skills to
+            achieve so much more!
           </span>
         </div>
-        <img
-          src="assests/programming.png"
-          style="border-radius: 16px"
-          width="45%"
-        />
-        <div
-          style="
-            height: 200px;
-            width: 1px;
-            position: absolute;
-            border-color: white;
-            border-width: 1000px;
-            background-color: white;
-            top: 0;
-            transform: translateY(-100px);
-            right: 50%;
-          "
-        ></div>
+        <div class="vl"></div>
       </div>
       <div class="item">
         <div
@@ -195,71 +232,57 @@
             border-radius: 16px;
             padding: 24px;
             margin-right: 24px;
+            width: 65%;
           "
         >
           <h3>Chess</h3>
           <span class="context">
-            I love playing chess! I started playing in 6th grade, and I've been
-            on and off the game since then. Though I haven't had the time to
-            join Stuyvesant's Chess Club, I still play with my friends and
-            family. I'm not the best, but I'm always trying to improve my game.
-            I currently have a rating of 1300 on chess.com and play the Pirc
-            Defense for black and London System for white.
+            I love playing chess! I started playing in
+            <span class="bold">6th grade</span>, and I've been on and off the
+            game since then. Though I haven't had the time to join Stuyvesant's
+            Chess Club, I still play with my friends and family. I'm not the
+            best, but I'm always trying to improve my game. I currently have a
+            <span class="bold">rating of 1350 on chess.com</span> and play the
+            Pirc Defense for black and London System for white, but I want to
+            learn more about their opening theory and new, more versatile
+            openings.
           </span>
         </div>
-        <video style="width: 45%; border-radius: 16px" controls>
+        <video class="media" controls>
           <source src="assests/pirc.mp4" type="video/mp4" />
         </video>
 
-        <div
-          style="
-            height: 200px;
-            width: 1px;
-            position: absolute;
-            border-color: white;
-            border-width: 1000px;
-            background-color: white;
-            top: 0;
-            transform: translateY(-100px);
-            right: 50%;
-          "
-        ></div>
+        <div class="vl" style="height: 175px"></div>
       </div>
       <div class="item">
+        <video class="media" controls>
+          <source src="assests/badminton.mp4" type="video/mp4" />
+        </video>
         <div
           style="
             background-color: #645995;
             border-radius: 16px;
             padding: 24px;
-            margin-right: 24px;
+            margin-left: 24px;
+            width: 65%;
           "
         >
           <h3>Badminton</h3>
           <span class="context"
             >Badminton is my sport of choice. I love how simplistic the game is,
-            but also the high skill gap that seperates the casuals from the
-            professionals. During the summer, you can often find me playing this
-            sport with my friends at the local park. Though, just like chess, I
-            still have much to improve and work on. I've been thinking about
-            trying out for Stuyvesant's Badminton Team, but we'll see.</span
+            but also the <span class="bold">high skill gap </span>that
+            <span class="bold"
+              >seperates the casuals from the professionals</span
+            >. During the summer, you can often find me playing this sport with
+            my friends at the local park. Though, just like chess, I still have
+            much to improve and work on. I've been thinking about
+            <span class="bold">trying out for Stuyvesant's Badminton Team</span
+            >, but we'll see. This sport has also been a good bonding experience
+            with my family, as they all know how to play, learning from when
+            they were little.</span
           >
         </div>
-        <video style="width: 45%; border-radius: 16px" controls>
-          <source src="assests/badminton.mp4" type="video/mp4" />
-        </video>
-        <div
-          style="
-            height: 250px;
-            width: 1px;
-            position: absolute;
-            border-color: white;
-            border-width: 1000px;
-            background-color: white;
-            top: 0;
-            right: 50%;
-            transform: translateY(-150px);
-          "
-        ></div>
+        <div class="vl"></div>
       </div>
     </div>
     <hr style="width: 70%; margin-bottom: 0px" />
@@ -289,9 +312,9 @@
         <div style="display: flex; flex-direction: column; align-items: center">
           <a style="font-size: 18px" href="home.html">Home</a>
           <a style="font-size: 18px" href="hobbies.html">Hobbies</a>
-          <a style="font-size: 18px" href="contact.html">Contact</a>
+          <a style="font-size: 18px" href="about.html">About</a>
         </div>
-        <a href="">
+        <a href="https://github.com/bi1ku/website/" target="_blank">
           <image
             src="assests/github.png"
             height="100"
@@ -304,5 +327,9 @@
       <hr style="width: 50%; margin-bottom: 32px" />
       <span>Copyright © Owen Shi | Feburary 21st, 2024 </span>
     </footer>
+    <script>
+      const audio = document.getElementsByTagName("audio")[0];
+      audio.volume = 0.05;
+    </script>
   </body>
 </html>
